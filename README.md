@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import joblit
 
 # Load the trained model
-with open("risk_model.pkl", "rb") as f:
-    model = pickle.load(f)
+with open("risk_model.pkl555", "rb") as f:
+    model = joblit.load(f)
 
 st.title("📊 AI Financial Risk Score Predictor")
 st.write("Upload your financial data file (.csv) to get predicted risk scores.")
